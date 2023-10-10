@@ -18,7 +18,7 @@ const Project = ({ projectNumber }) => {
     initial: {
       opacity: 0,
       transition: { duration: 0.5 },
-      X: 200,
+      x: 200,
     },
     visible: {
       opacity: 1,
@@ -49,16 +49,14 @@ const Project = ({ projectNumber }) => {
     },
   };
 
-  console.log(imgAnim);
-
   return (
     <motion.div
+      className="project-main"
       initial="initial"
       animate="visible"
       exit="exit"
       transition={transition}
       variants={variants}
-      className="project-main"
     >
       <div className="project-content">
         <h1>{currentProject.title}</h1>
@@ -70,7 +68,7 @@ const Project = ({ projectNumber }) => {
         </ul>
       </div>
       <motion.div
-        initial="ïnitial"
+        initial="initial"
         animate="visible"
         variants={imgAnim}
         transition={{ duration: 1.2 }}
@@ -94,7 +92,7 @@ const Project = ({ projectNumber }) => {
             rel="noopener noreferrer"
             className="hover"
           >
-            <span className="button">Voir le Site</span>
+            <span className="button">voir le site</span>
           </a>
         </div>
       </motion.div>
