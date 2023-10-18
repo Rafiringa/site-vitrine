@@ -40,7 +40,7 @@ const Home = () => {
           <div className="main-content">
             <motion.h1
               drag
-              dragonend
+              onDragEnd
               dragConstraints={{
                 left: -250,
                 right: 950,
@@ -52,7 +52,7 @@ const Home = () => {
             </motion.h1>
             <motion.h2
               drag
-              dragonend
+              onDragEnd
               dragConstraints={{
                 left: -250,
                 right: 950,
